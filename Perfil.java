@@ -2,8 +2,8 @@ import java.util.Vector;
 
 public abstract class Perfil{
 	private String usuario; boolean ativo;
-	private seguidos Vector<Perfil>; private seguidores Vector<Perfil>;
-	private timeline Vector<Tweet>;
+	private Vector<Perfil> seguidos; private Vector<Perfil> seguidores;
+	private Vector<Tweet> timeline;
 //======================metodos=================================================
 	void Perfil(String nome){
 	    this.usuario = nome;
