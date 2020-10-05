@@ -4,25 +4,42 @@ public abstract class Perfil{
 	private String usuario; boolean ativo;
 	private seguidos Vector<Perfil>; private seguidores Vector<Perfil>;
 	private timeline Vector<Tweet>;
-//========construtor da classe=====================================	
+//======================metodos=================================================
 	void Perfil(String nome){
 	    this.usuario = nome;
 	    seguidos = new Vector<Perfil>();
 	    seguidores = new Vector<Perfil>();
 	    timeline = new Vector<Tweet>();
 	}
-//=======manipulacao da var usuario=================================
 	public String getUsuario(){
 	    return this.usuario;
 	}
 	public void setUsuario(String u){
 	    this.usuario = u;
 	}
-//=======manipulacao da var ativo===================================
-    public boolean getAtivo(){
+    public boolean isAtivo(){
         return this.usuario;
     }
     public void setAtivo(boolean b){
         this.ativo = b;
     }
+    public void addSeguidor(Perfil p){
+        seguidores.add(p);
+    }
+    public Vector<Perfil> getSeguidores(){
+        return this.seguidores;
+    }
+    public void addSeguido(Perfil p){
+        seguidos.add(p);
+    }
+    public Vector<Perfil> getSeguidos(){
+        return this.seguidos;
+    }
+    public void addTweet(Tweet t){
+        timeline.add(t);
+    }
+    public Vector<Tweet> getTimeline(){
+        return this.timeline;
+    }
+    public 
 }
