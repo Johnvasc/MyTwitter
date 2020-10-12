@@ -18,7 +18,7 @@ public abstract class Perfil{
 	    this.usuario = u;
 	}
     public boolean isAtivo(){
-        return this.usuario;
+        return this.ativo;
     }
     public void setAtivo(boolean b){
         this.ativo = b;
